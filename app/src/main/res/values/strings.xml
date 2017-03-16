@@ -1,0 +1,5 @@
+<resources>
+    <string name="Save">Save to file</string>
+    <string name="Load">Load from file</string>
+    <string name="app_name">FileI/O</string>
+</resources>
