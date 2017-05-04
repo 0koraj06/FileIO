@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             try
             {
 
-                FileWriter fw = new FileWriter(dir_path + "/textedit.txt");
+                FileWriter fw = new FileWriter(dir_path + "/textedit.txt"); //true if i want to do one by one
                 PrintWriter pw = new PrintWriter(fw);
                 pw.println(editText.getText());
                 pw.flush();
@@ -62,10 +62,10 @@ public class MainActivity extends AppCompatActivity {
 
                 FileReader fr = new FileReader(dir_path + "/textedit.txt");
                 BufferedReader br = new BufferedReader (fr);
-                String line = "/textedit.txt";
+                String line = "";
                 while((line = br.readLine()) != null){
 
-                    System.out.println(editText);
+                   System.out.println(line);
                 }
 
 
